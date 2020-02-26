@@ -27,7 +27,7 @@ defmodule Leetcode.DecompressRunLengthEncodedList do
   def decode(list), do: decode(list, [])
 
   defp decode([freq, val | list], accumulator) do
-    decode(list, Enum.concat(accumulator, (for _ <- 1..freq, do: val)))
+    decode(list, accumulator ++ (for _ <- 1..freq, do: val))
   end
 
   defp decode([], acc), do: acc
