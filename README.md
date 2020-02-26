@@ -1,21 +1,15 @@
 # LeetcodeEx
 
-**TODO: Add description**
+Learning me some Elixir by attempting Leetcode problems
 
-## Installation
+## Process
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `leetcode_ex` to your list of dependencies in `mix.exs`:
+Problems will be solved in their own modules. All problems will have tests to verify the solution at the very least satisfies the example given in the problem.
 
-```elixir
-def deps do
-  [
-    {:leetcode_ex, "~> 0.1.0"}
-  ]
-end
-```
+## Running Tests
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/leetcode_ex](https://hexdocs.pm/leetcode_ex).
+Tests are run with `mix test`. Check `mix help test` for more information.
 
+## Code Quality
+
+Code quality is checked with [Credo](https://github.com/rrrene/credo). Enforcing a certain level of quality from the get-go will help me learn to do things "the right way".
