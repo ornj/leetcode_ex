@@ -30,7 +30,6 @@ defmodule Leetcode.GroupPeopleByGroupSize do
     group_sizes
     |> Enum.with_index()
     |> Enum.group_by(&(elem(&1, 0)), &(elem(&1, 1)))
-    |> Map.to_list()
     |> Enum.flat_map(fn {count, elements} -> Enum.chunk_every(elements, count) end)
   end
 end
